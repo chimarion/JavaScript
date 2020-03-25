@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <p id="name"></p>
+        <script>
+            var name = "Marion";
+            document.getElementById("name").innerHTML = "My name is " + name;
+        </script>
+        <p id="demo"></p>
+        <script>
+            
+            var courses = ["C#", "Javacsript", "Python", "HTML", "CSS"];
+            var i = 0;
+            var len = courses.length;
+            var text = "";
+            for (; i < len; i++) {
+            text += courses[i] + "<br>";
+            }
+            document.getElementById("demo").innerHTML = text;
+        </script>
+        <p id= "courses"></p>
+        <script>
+            const oddNumber = [];
+            for (let i = 0; i<=200; i++) {
+                if (i %2!==0) oddNumber.push(i);  
+            }
+            document.getElementById("courses").innerHTML = oddNumber;
+        </script>
+    </body>
+</html>
